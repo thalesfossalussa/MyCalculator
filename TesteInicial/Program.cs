@@ -7,66 +7,50 @@ namespace TesteInicial
     {
         static int leituraInt()
         {
-            string ler;
-            int numero;
-            ler = Console.ReadLine();
-            numero = Convert.ToInt32(ler);
+            string ler = Console.ReadLine();
+            int numero = Convert.ToInt32(ler);
             return numero;
         }
 
         static void soma()
         {
-            int a, b, sum;
-            a = leituraInt();
-            b = leituraInt();
-            sum = a + b;
-            Console.WriteLine("\nA soma dos números é: " + sum + "\n");
+            int a = leituraInt();
+            int b = leituraInt();
+            Console.WriteLine($"\n{a} + {b} = {a + b}\n");
         }
 
         static void multiplicacao()
         {
-            int a, b, mult;
-            a = leituraInt();
-            b = leituraInt();
-            mult = a * b;
-            Console.WriteLine("\nA multiplicação dos números é: " + mult + "\n");
+            int a = leituraInt();
+            int b = leituraInt();
+            Console.WriteLine($"\n{a} * {b} = {a * b}\n");
         }
 
         static void subtracao()
         {
-            int a, b, sub;
-            a = leituraInt();
-            b = leituraInt();
-            sub = a - b;
-            Console.WriteLine("\nA subtração dos números é: " + sub + "\n");
+            int a = leituraInt();
+            int b = leituraInt();
+            Console.WriteLine($"\n{a} - {b} = {a - b}\n");
         }
 
         static void divisao()
         {
-            double a, b;
-            double div;
-            a = leituraInt();
-            b = leituraInt();
-            div = a / b;
-            Console.WriteLine("\nA divisão dos números é: " + div.ToString("N2") + "\n");
+            double a = leituraInt();
+            double b = leituraInt();
+            Console.WriteLine($"\n{a} / {b} = {(a / b):N2}\n");
         }
 
         static void potenciacao()
         {
-            double x, expoente;
-            Console.Write("Escreva o número: ");
-            x = leituraInt();
-            Console.Write("Agora escreva o expoente: ");
-            expoente = leituraInt();
-            Console.WriteLine("O resultado da potenciação é: " + Math.Pow(x,expoente) + "\n");
+            int x = leituraInt();
+            int expoente = leituraInt();
+            Console.WriteLine($"\n{x}^{expoente} = {Math.Pow(x, expoente)}\n");
         }
-
+        
         static void raizQuadrada()
         {
-            double x;
-            Console.Write("Escreva o valor da raiz: ");
-            x = leituraInt();
-            Console.WriteLine("O resultado da raiz quadrada é: " + Math.Sqrt(x) + "\n");
+            double x = leituraInt();
+            Console.WriteLine($"\nRaiz quadrade de {x} = {Math.Sqrt(x):N2}\n");
         }
 
         static void Main(string[] args)
