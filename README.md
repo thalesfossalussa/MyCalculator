@@ -24,3 +24,9 @@ Aplicativo de console para aprendizado em C#, Desafio #100DaysOfCode
 **Progresso diário:** Hoje criei mais duas funções para que o usuário possa fazer uma potenciação simples e também extrair a raiz quadrada de um número.
 
 **Aprendizado:** O C# ja possui uma biblioteca implementada nele chamada math que facilita muito as operações, ja conhecia essa biblioteca pois utilizo ela em C, porém, achei que eu deveria fazer um import nela, dps de um tempo tentando importa-la descobri que já estava la e eu consigo utilizar apenas escrevendo "biblioteca.funcao", realmente muito simples.
+
+### Dia 5, 28 de Outubro de 2020, Quarta-feira.
+
+**Progresso diário:** Escrevi uma função que retorna a raiz cúbica de um número e refatorei o código de um modo em que ele ficasse mais clean, também apaguei algumas varáveis que se tornaram inúteis depois que aprendi que eu poderia coloca-lás dentro do console.writeline.
+
+**Aprendizado:** Entendi um outro modo de usar o console.writeline de uma maneira em que eu consiga colcar as variáveis dentro dele sem ficar abrindo e fechando aspas, também encontrei um novo jeito de printar o toString para números utilizando o ":".
