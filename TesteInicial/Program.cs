@@ -53,6 +53,12 @@ namespace TesteInicial
             Console.WriteLine($"\nRaiz quadrade de {x} = {Math.Sqrt(x):N2}\n");
         }
 
+        static void raizCubica()
+        {
+            double x = leituraInt();
+            Console.WriteLine($"\nRaiz cubicade de {x} = {Math.Cbrt(x):N2}\n");
+        }
+
         static void Main(string[] args)
         {
             int menu;
@@ -72,6 +78,7 @@ namespace TesteInicial
                 Console.WriteLine("4 - Divisão");
                 Console.WriteLine("5 - Potenciação");
                 Console.WriteLine("6 - Raiz quadrada");
+                Console.WriteLine("7 - Raiz cubica");
                 Console.WriteLine("0 - Sair");
 
                 menu = leituraInt();
@@ -96,6 +103,9 @@ namespace TesteInicial
                         break;
                     case 6:
                         raizQuadrada();
+                        break;
+                    case 7:
+                        raizCubica();
                         break;
                     default:
                         Console.WriteLine("\nValor inválido, por favor tente novamente!\n");
