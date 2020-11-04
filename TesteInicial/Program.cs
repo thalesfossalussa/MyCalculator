@@ -1,61 +1,61 @@
 ﻿using System;
 using System.Reflection.Metadata.Ecma335;
 
-namespace TesteInicial
+namespace MyCalculator
 {
     class Program
     {
-        static int leituraInt()
+        static int LeituraInt()
         {
             string ler = Console.ReadLine();
             int numero = Convert.ToInt32(ler);
             return numero;
         }
 
-        static void soma()
+        static void Soma()
         {
-            int a = leituraInt();
-            int b = leituraInt();
+            int a = LeituraInt();
+            int b = LeituraInt();
             Console.WriteLine($"\n{a} + {b} = {a + b}\n");
         }
 
-        static void multiplicacao()
+        static void Multiplicacao()
         {
-            int a = leituraInt();
-            int b = leituraInt();
+            int a = LeituraInt();
+            int b = LeituraInt();
             Console.WriteLine($"\n{a} * {b} = {a * b}\n");
         }
 
-        static void subtracao()
+        static void Subtracao()
         {
-            int a = leituraInt();
-            int b = leituraInt();
+            int a = LeituraInt();
+            int b = LeituraInt();
             Console.WriteLine($"\n{a} - {b} = {a - b}\n");
         }
 
-        static void divisao()
+        static void Divisao()
         {
-            double a = leituraInt();
-            double b = leituraInt();
+            double a = LeituraInt();
+            double b = LeituraInt();
             Console.WriteLine($"\n{a} / {b} = {(a / b):N2}\n");
         }
 
-        static void potenciacao()
+        static void Potenciacao()
         {
-            int x = leituraInt();
-            int expoente = leituraInt();
+            int x = LeituraInt();
+            int expoente = LeituraInt();
             Console.WriteLine($"\n{x}^{expoente} = {Math.Pow(x, expoente)}\n");
         }
         
-        static void raizQuadrada()
+        static void RaizQuadrada()
         {
-            double x = leituraInt();
+            double x = LeituraInt();
             Console.WriteLine($"\nRaiz quadrade de {x} = {Math.Sqrt(x):N2}\n");
         }
 
-        static void raizCubica()
+        static void RaizCubica()
         {
-            double x = leituraInt();
+            double x = LeituraInt();
             Console.WriteLine($"\nRaiz cubicade de {x} = {Math.Cbrt(x):N2}\n");
         }
 
@@ -81,31 +81,31 @@ namespace TesteInicial
                 Console.WriteLine("7 - Raiz cubica");
                 Console.WriteLine("0 - Sair");
 
-                menu = leituraInt();
+                menu = LeituraInt();
                 if (menu == 0) break;
 
                 switch (menu)
                 {
                     case 1:
-                        soma();
+                        Soma();
                         break;
                     case 2:
-                        multiplicacao();
+                        Multiplicacao();
                         break;
                     case 3:
-                        subtracao();
+                        Subtracao();
                             break;
                     case 4:
-                        divisao();
+                        Divisao();
                             break;
                     case 5:
-                        potenciacao();
+                        Potenciacao();
                         break;
                     case 6:
-                        raizQuadrada();
+                        RaizQuadrada();
                         break;
                     case 7:
-                        raizCubica();
+                        RaizCubica();
                         break;
                     default:
                         Console.WriteLine("\nValor inválido, por favor tente novamente!\n");
