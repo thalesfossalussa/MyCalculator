@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Reflection.Metadata.Ecma335;
 
 namespace MyCalculator
 {
@@ -46,7 +45,7 @@ namespace MyCalculator
             int expoente = LeituraInt();
             Console.WriteLine($"\n{x}^{expoente} = {Math.Pow(x, expoente)}\n");
         }
-        
+
         static void RaizQuadrada()
         {
             double x = LeituraInt();
@@ -59,6 +58,26 @@ namespace MyCalculator
             Console.WriteLine($"\nRaiz cubicade de {x} = {Math.Cbrt(x):N2}\n");
         }
 
+        static double Delta(double a, double b, double c)
+        {
+            double delta;
+            delta = Math.Pow(b, 2) - 4 * a * c;
+            return delta;
+        }
+
+        static void Bhaskara()
+        {
+            double a = LeituraInt();
+            double b = LeituraInt();
+            double c = LeituraInt();
+            double x1, x2;
+            x1 = (-b + Math.Sqrt(Delta(a, b, c))) / (2 * a);
+            x2 = (-b - Math.Sqrt(Delta(a, b, c))) / (2 * a);
+
+            if (x1 == x2) Console.WriteLine($"Raiz única {x1:N2}");
+            else Console.WriteLine($"x1 = {x1:N2}\nx2 = {x2:N2}");
+        }
+
         static void Main(string[] args)
         {
             int selecionarMenu;
@@ -69,7 +88,7 @@ namespace MyCalculator
 
             Console.WriteLine("\n" + nomeUsuario + " Started MyCalculator! have fun!!!\n");
 
-            while(true)
+            while (true)
             {
                 Console.Write
                 (
@@ -81,6 +100,7 @@ namespace MyCalculator
                     "5 - Potenciação\n" +
                     "6 - Raiz quadrada\n" +
                     "7 - Raiz cubica\n" +
+                    "8 - Bhaskara\n" +
                     "0 - Sair\n"
                 );
 
@@ -97,10 +117,10 @@ namespace MyCalculator
                         break;
                     case 3:
                         Subtracao();
-                            break;
+                        break;
                     case 4:
                         Divisao();
-                            break;
+                        break;
                     case 5:
                         Potenciacao();
                         break;
@@ -109,6 +129,9 @@ namespace MyCalculator
                         break;
                     case 7:
                         RaizCubica();
+                        break;
+                    case 8:
+                        Bhaskara();
                         break;
                     default:
                         Console.WriteLine("\nValor inválido, por favor tente novamente!\n");
