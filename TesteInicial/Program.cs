@@ -71,15 +71,18 @@ namespace MyCalculator
 
             while(true)
             {
-                Console.WriteLine("Menu de operações:");
-                Console.WriteLine("1 - Soma");
-                Console.WriteLine("2 - Multiplicação");
-                Console.WriteLine("3 - Subtração");
-                Console.WriteLine("4 - Divisão");
-                Console.WriteLine("5 - Potenciação");
-                Console.WriteLine("6 - Raiz quadrada");
-                Console.WriteLine("7 - Raiz cubica");
-                Console.WriteLine("0 - Sair");
+                Console.Write
+                (
+                    "Menu de operações:\n" +
+                    "1 - Soma\n" +
+                    "2 - Multiplicação\n" +
+                    "3 - Subtração\n" +
+                    "4 - Divisão\n" +
+                    "5 - Potenciação\n" +
+                    "6 - Raiz quadrada\n" +
+                    "7 - Raiz cubica\n" +
+                    "0 - Sair\n"
+                );
 
                 selecionarMenu = LeituraInt();
                 if (selecionarMenu == 0) break;
