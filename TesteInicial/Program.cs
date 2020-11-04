@@ -61,13 +61,13 @@ namespace MyCalculator
 
         static void Main(string[] args)
         {
-            int menu;
-            string nome;
+            int selecionarMenu;
+            string nomeUsuario;
             Console.Write("Olá! Qual o seu nome? ");
 
-            nome = Console.ReadLine();
+            nomeUsuario = Console.ReadLine();
 
-            Console.WriteLine("\n" + nome + " Started MyCalculator! have fun!!!\n");
+            Console.WriteLine("\n" + nomeUsuario + " Started MyCalculator! have fun!!!\n");
 
             while(true)
             {
@@ -81,10 +81,10 @@ namespace MyCalculator
                 Console.WriteLine("7 - Raiz cubica");
                 Console.WriteLine("0 - Sair");
 
-                menu = LeituraInt();
-                if (menu == 0) break;
+                selecionarMenu = LeituraInt();
+                if (selecionarMenu == 0) break;
 
-                switch (menu)
+                switch (selecionarMenu)
                 {
                     case 1:
                         Soma();
