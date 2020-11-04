@@ -30,3 +30,9 @@ Aplicativo de console para aprendizado em C#, Desafio #100DaysOfCode
 **Progresso diário:** Escrevi uma função que retorna a raiz cúbica de um número e refatorei o código de um modo em que ele ficasse mais clean, também apaguei algumas varáveis que se tornaram inúteis depois que aprendi que eu poderia coloca-lás dentro do console.writeline.
 
 **Aprendizado:** Entendi um outro modo de usar o console.writeline de uma maneira em que eu consiga colcar as variáveis dentro dele sem ficar abrindo e fechando aspas, também encontrei um novo jeito de printar o toString para números utilizando o ":".
+
+### Dia 6, 4 de Outubro de 2020, Quarta-feira.
+
+**Progresso diário:** Foi implementado algumas boas práticas ao projeto para que a leitura de código fique mais simplificada, também foi adicionado duas funções novas uma para calcular o delta sobre 3 números e outra para calcular Bhaskara.
+
+**Aprendizado:** Aos poucos estou entendendo como funciona as boas práticas em C#, e agora escrevendo funções um pouco mais complexas também será necessário debug mais complexo, além disso encontrei no menu algo que implementa boas práticas automaticamente no código.
