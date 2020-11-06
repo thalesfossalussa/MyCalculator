@@ -61,7 +61,7 @@ namespace MyCalculator
         static double Delta(double a, double b, double c)
         {
             double delta;
-            delta = Math.Pow(b, 2) - 4 * a * c;
+            delta = Math.Pow(b, 2) - (4 * a * c);
             return delta;
         }
 
@@ -71,11 +71,15 @@ namespace MyCalculator
             double b = LeituraInt();
             double c = LeituraInt();
             double x1, x2;
-            x1 = (-b + Math.Sqrt(Delta(a, b, c))) / (2 * a);
-            x2 = (-b - Math.Sqrt(Delta(a, b, c))) / (2 * a);
+            if (Delta(a,b,c) < 0) Console.WriteLine("Não possui raiz real\n");
+            else
+            {
+                x1 = (-b + Math.Sqrt(Delta(a, b, c))) / (2 * a);
+                x2 = (-b - Math.Sqrt(Delta(a, b, c))) / (2 * a);
 
-            if (x1 == x2) Console.WriteLine($"Raiz única {x1:N2}");
-            else Console.WriteLine($"x1 = {x1:N2}\nx2 = {x2:N2}");
+                if (x1 == x2) Console.WriteLine($"Raiz única {x1:N2}\n");
+                else Console.WriteLine($"x1 = {x1:N2}\nx2 = {x2:N2}\n");
+            }
         }
 
         static void Main(string[] args)
