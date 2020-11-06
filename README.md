@@ -37,8 +37,14 @@ Aplicativo de console para aprendizado em C#, Desafio #100DaysOfCode
 
 **Aprendizado:** Aos poucos estou entendendo como funciona as boas práticas em C#, e agora escrevendo funções um pouco mais complexas também será necessário debug mais complexo, além disso encontrei no menu algo que implementa boas práticas automaticamente no código.
 
-### Dia 7, 5 de Outubro de 2020, Quinta-feira
+### Dia 7, 5 de Outubro de 2020, Quinta-feira.
 
 **Progresso diário:** Foi recusado o uso de bhaskara com delta negativo, também foi adicionado um novo menu para o uso de funções que calculam áreas de formas geométricas.
 
 **Aprendizado:** Hoje não tive aprendizado com a linguagem, porém, ja estou planejando colocar essas funções de áreas em um outro arquivo simplificando a leitura de código.
+
+### Dia 8, 6 de Outubro de 2020, Sexta-feira.
+
+**Progresso diário:** Foi criado um novo arquivo para conter as funções que vão trabalhar com areas de figuras geométricas, também foi adicionado mais algumas funções para esse arquivo.
+
+**Aprendizado:** Entendi como consigo compartilhar funções entre arquivos no C#, vou precisar estudar os conceitos de POO para entender especificamente o que cada prefixo de um metodo/função significa.
