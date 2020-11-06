@@ -103,6 +103,9 @@ namespace MyCalculator
                 Console.Write
                 (
                     "1 - Quadrado\n" +
+                    "2 - Retângulo\n" +
+                    "3 - Triângulo\n" +
+                    "4 - Losango\n" +
                     "0 - Voltar\n"
                 );
 
@@ -114,6 +117,15 @@ namespace MyCalculator
                     {
                         case 1:
                             Area.Quadrado();
+                            break;
+                        case 2:
+                            Area.Retangulo();
+                            break;
+                        case 3:
+                            Area.Triangulo();
+                            break;
+                        case 4:
+                            Area.Losango();
                             break;
                         default:
                             Console.WriteLine("Esse menu não existe!\n");
