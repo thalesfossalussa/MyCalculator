@@ -36,3 +36,9 @@ Aplicativo de console para aprendizado em C#, Desafio #100DaysOfCode
 **Progresso diário:** Foi implementado algumas boas práticas ao projeto para que a leitura de código fique mais simplificada, também foi adicionado duas funções novas uma para calcular o delta sobre 3 números e outra para calcular Bhaskara.
 
 **Aprendizado:** Aos poucos estou entendendo como funciona as boas práticas em C#, e agora escrevendo funções um pouco mais complexas também será necessário debug mais complexo, além disso encontrei no menu algo que implementa boas práticas automaticamente no código.
+
+### Dia 7, 5 de Outubro de 2020, Quinta-feira
+
+**Progresso diário:** Foi recusado o uso de bhaskara com delta negativo, também foi adicionado um novo menu para o uso de funções que calculam áreas de formas geométricas.
+
+**Aprendizado:** Hoje não tive aprendizado com a linguagem, porém, ja estou planejando colocar essas funções de áreas em um outro arquivo simplificando a leitura de código.
