@@ -95,6 +95,41 @@ namespace MyCalculator
             Console.WriteLine($"Media = {media:N2}\n");
         }
 
+        static void AreaQuadrado()
+        {
+            Console.WriteLine("Digite o valor da lateral");
+            int lateral = LeituraInt();
+            Console.WriteLine($"Área do quadrado = {Math.Pow(lateral, 2)}\n");
+        }
+
+        static void MenuAreas()
+        {
+            int selecionarMenu;
+            while (true)
+            {
+                Console.Write
+                (
+                    "1 - Quadrado\n" +
+                    "0 - Voltar\n"
+                );
+
+                selecionarMenu = LeituraInt();
+                if (selecionarMenu == 0) break;
+                else
+                {
+                    switch (selecionarMenu)
+                    {
+                        case 1:
+                            AreaQuadrado();
+                            break;
+                        default:
+                            Console.WriteLine("Esse menu não existe!\n");
+                            break;
+                    }
+                }
+            }
+        }
+
         static void Main(string[] args)
         {
             int selecionarMenu;
@@ -119,8 +154,9 @@ namespace MyCalculator
                     "7 - Raiz cubica\n" +
                     "8 - Bhaskara\n" +
                     "9 - Média\n" +
+                    "10 - Áreas\n" +
                     "0 - Sair\n"
-                );
+                ); ;
 
                 selecionarMenu = LeituraInt();
                 if (selecionarMenu == 0) break;
@@ -153,6 +189,9 @@ namespace MyCalculator
                         break;
                     case 9:
                         Media();
+                        break;
+                    case 10:
+                        MenuAreas();
                         break;
                     default:
                         Console.WriteLine("\nValor inválido, por favor tente novamente!\n");
