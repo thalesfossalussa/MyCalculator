@@ -4,7 +4,7 @@ namespace MyCalculator
 {
     class Program
     {
-        static int LeituraInt()
+        public static int LeituraInt()
         {
             string ler = Console.ReadLine();
             int numero = Convert.ToInt32(ler);
@@ -95,13 +95,6 @@ namespace MyCalculator
             Console.WriteLine($"Media = {media:N2}\n");
         }
 
-        static void AreaQuadrado()
-        {
-            Console.WriteLine("Digite o valor da lateral");
-            int lateral = LeituraInt();
-            Console.WriteLine($"Área do quadrado = {Math.Pow(lateral, 2)}\n");
-        }
-
         static void MenuAreas()
         {
             int selecionarMenu;
@@ -120,7 +113,7 @@ namespace MyCalculator
                     switch (selecionarMenu)
                     {
                         case 1:
-                            AreaQuadrado();
+                            Area.Quadrado();
                             break;
                         default:
                             Console.WriteLine("Esse menu não existe!\n");
@@ -130,7 +123,7 @@ namespace MyCalculator
             }
         }
 
-        static void Main(string[] args)
+        static void Main()
         {
             int selecionarMenu;
             string nomeUsuario;
