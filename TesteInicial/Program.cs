@@ -67,8 +67,11 @@ namespace MyCalculator
 
         static void Bhaskara()
         {
+            Console.Write("a = ");
             double a = LeituraInt();
+            Console.Write("b = ");
             double b = LeituraInt();
+            Console.Write("c = ");
             double c = LeituraInt();
             double x1, x2;
             if (Delta(a,b,c) < 0) Console.WriteLine("Não possui raiz real\n");
@@ -80,6 +83,16 @@ namespace MyCalculator
                 if (x1 == x2) Console.WriteLine($"Raiz única {x1:N2}\n");
                 else Console.WriteLine($"x1 = {x1:N2}\nx2 = {x2:N2}\n");
             }
+        }
+
+        static void Media()
+        {
+            Console.Write("Digite a quantidade de números: ");
+            int tamanho = LeituraInt();
+            double media = 0;
+            for (int i = 0; i < tamanho; i++) media += LeituraInt();
+            media /= tamanho;
+            Console.WriteLine($"Media = {media:N2}\n");
         }
 
         static void Main(string[] args)
@@ -105,6 +118,7 @@ namespace MyCalculator
                     "6 - Raiz quadrada\n" +
                     "7 - Raiz cubica\n" +
                     "8 - Bhaskara\n" +
+                    "9 - Média\n" +
                     "0 - Sair\n"
                 );
 
@@ -136,6 +150,9 @@ namespace MyCalculator
                         break;
                     case 8:
                         Bhaskara();
+                        break;
+                    case 9:
+                        Media();
                         break;
                     default:
                         Console.WriteLine("\nValor inválido, por favor tente novamente!\n");
