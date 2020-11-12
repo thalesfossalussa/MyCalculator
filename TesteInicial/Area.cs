@@ -2,40 +2,26 @@
 
 namespace MyCalculator
 {
-    public class Area
+    class Area
     {
-        public static void Quadrado()
+        public double Quadrado(int lateral)
         {
-            Console.WriteLine("Digite o valor da lateral");
-            int lateral = Program.LeituraInt();
-            Console.WriteLine($"Área do quadrado = {Math.Pow(lateral, 2)}\n");
+            return Math.Pow(lateral, 2);
         }
 
-        public static void Retangulo()
+        public double Retangulo(int comprimento, int altura)
         {
-            Console.Write("Comprimento = ");
-            int comprimento = Program.LeituraInt();
-            Console.Write("Altura = ");
-            int Altura = Program.LeituraInt();
-            Console.WriteLine($"Área do retângulo = {comprimento * Altura}\n");
+            return comprimento * altura;
         }
 
-        public static void Triangulo()
+        public double Triangulo(int b, int altura)
         {
-            Console.Write("Base = ");
-            int b = Program.LeituraInt();
-            Console.Write("Altura = ");
-            int altura = Program.LeituraInt();
-            Console.WriteLine($"Área do triângulo = {(b * altura) / (2)}\n");
+            return b * altura / 2;
         }
 
-        public static void Losango()
+        public double Losango(int diagonalMaior, int diagonalMenor)
         {
-            Console.Write("Diagonal maior = ");
-            int dMaior = Program.LeituraInt();
-            Console.Write("Diagonal menor = ");
-            int dMenor = Program.LeituraInt();
-            Console.WriteLine($"Área do Losango = {(dMaior * dMenor) / (2)}\n");
+            return diagonalMaior * diagonalMenor / 2;
         }
     }
 }

@@ -6,9 +6,18 @@ namespace MyCalculator
     {
         public static int LeituraInt()
         {
-            string ler = Console.ReadLine();
-            int numero = Convert.ToInt32(ler);
-            return numero;
+            var ler = Console.ReadLine();
+            /*
+            try
+            {
+                Convert.ToInt32(ler);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            */
+            return Convert.ToInt32(ler);
         }
 
         static void Soma()
@@ -65,6 +74,7 @@ namespace MyCalculator
             return delta;
         }
 
+
         static void Bhaskara()
         {
             Console.Write("a = ");
@@ -97,7 +107,9 @@ namespace MyCalculator
 
         static void MenuAreas()
         {
+            Area area = new Area();
             int selecionarMenu;
+            int lateral, comprimento, altura, b, diagonalMaior, diagonalMenor;
             while (true)
             {
                 Console.Write
@@ -116,16 +128,23 @@ namespace MyCalculator
                     switch (selecionarMenu)
                     {
                         case 1:
-                            Area.Quadrado();
+                            lateral = LeituraInt();
+                            Console.WriteLine(area.Quadrado(lateral));
                             break;
                         case 2:
-                            Area.Retangulo();
+                            comprimento = LeituraInt();
+                            altura = LeituraInt();
+                            Console.WriteLine(area.Retangulo(comprimento,altura));
                             break;
                         case 3:
-                            Area.Triangulo();
+                            b = LeituraInt();
+                            altura = LeituraInt();
+                            Console.WriteLine(area.Triangulo(b, altura));
                             break;
                         case 4:
-                            Area.Losango();
+                            diagonalMaior = LeituraInt();
+                            diagonalMenor = LeituraInt();
+                            Console.WriteLine(area.Losango(diagonalMaior, diagonalMenor));
                             break;
                         default:
                             Console.WriteLine("Esse menu não existe!\n");
