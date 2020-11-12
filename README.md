@@ -31,20 +31,26 @@ Aplicativo de console para aprendizado em C#, Desafio #100DaysOfCode
 
 **Aprendizado:** Entendi um outro modo de usar o console.writeline de uma maneira em que eu consiga colcar as variáveis dentro dele sem ficar abrindo e fechando aspas, também encontrei um novo jeito de printar o toString para números utilizando o ":".
 
-### Dia 6, 4 de Outubro de 2020, Quarta-feira.
+### Dia 6, 4 de Novembro de 2020, Quarta-feira.
 
 **Progresso diário:** Foi implementado algumas boas práticas ao projeto para que a leitura de código fique mais simplificada, também foi adicionado duas funções novas uma para calcular o delta sobre 3 números e outra para calcular Bhaskara.
 
 **Aprendizado:** Aos poucos estou entendendo como funciona as boas práticas em C#, e agora escrevendo funções um pouco mais complexas também será necessário debug mais complexo, além disso encontrei no menu algo que implementa boas práticas automaticamente no código.
 
-### Dia 7, 5 de Outubro de 2020, Quinta-feira.
+### Dia 7, 5 de Novembro de 2020, Quinta-feira.
 
 **Progresso diário:** Foi recusado o uso de bhaskara com delta negativo, também foi adicionado um novo menu para o uso de funções que calculam áreas de formas geométricas.
 
 **Aprendizado:** Hoje não tive aprendizado com a linguagem, porém, ja estou planejando colocar essas funções de áreas em um outro arquivo simplificando a leitura de código.
 
-### Dia 8, 6 de Outubro de 2020, Sexta-feira.
+### Dia 8, 6 de Novembro de 2020, Sexta-feira.
 
 **Progresso diário:** Foi criado um novo arquivo para conter as funções que vão trabalhar com areas de figuras geométricas, também foi adicionado mais algumas funções para esse arquivo.
 
 **Aprendizado:** Entendi como consigo compartilhar funções entre arquivos no C#, vou precisar estudar os conceitos de POO para entender especificamente o que cada prefixo de um metodo/função significa.
+
+### Dia 9, 11 de Novembro de 2020, Quarta-feira.
+
+**Progresso diário:** Alterei algumas partes do código para que ele seja escrito da maneira corre, parei de usar a classe área e passei a me referir a ela como um objeto, também alterei todas as funções do arquivo Area.cs para que elas apenas executem a função dela.
+
+**Aprendizado:** Dei uma pesquisada sobre POO e imagino que na verdade ao invés de me referir as funções como classes eu deva apenas utilizá-las como um objeto, também vi o conceito de que a função não deve fazer mais do que executar o que ela está proposta a fazer, então eu retirei os escritos da função e apenas estou fazendo o cálculo nelas.
